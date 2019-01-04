@@ -1,0 +1,30 @@
+{
+  "name": "url-shortener-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinaNgh/URL-Shortener-Microservice.git"
+  },
+  "author": "Mina Noghabaei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MinaNgh/URL-Shortener-Microservice/issues"
+  },
+  "homepage": "https://github.com/MinaNgh/URL-Shortener-Microservice#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dns": "^0.2.2",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.4.2",
+    "node-env-file": "^0.1.8",
+    "valid-url": "^1.0.9"
+  }
+}
