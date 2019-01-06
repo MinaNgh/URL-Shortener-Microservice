@@ -5,10 +5,8 @@ const bodyParser = require('body-parser');
 const validUrl = require('valid-url');
 const mongoose = require('mongoose');
 var shortId = require("shortid");
-//connection string stored in heroku config values
 const urlDB = process.env.DB_URL;
-// const urlDB = 'mongodb//mina:mina123456@ds139655.mlab.com:39655/fccmongo';
-// require('dotenv').config();
+
 var output;
 app.use(express.static(__dirname+"/public"));
 app.get("/",(req, res)=>{
@@ -28,16 +26,12 @@ var URLSchema = new Schema({
 	} 
 });
 var URL = mongoose.model('URL',URLSchema);
-// var findURL = function(url, done){
-	
-// }
+
 app.post("/api/shorturl/new",(req,res)=>{
 	input = req.body.url;
   	let originalUrl;
   	let shortUrl;
     if (validUrl.isUri(input)){
-    	
-    	// findURL(input,done);
 
     	URL.find({oringinal_url:input},(err,data)=>{
 
