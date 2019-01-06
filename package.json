@@ -25,6 +25,7 @@
     "mongodb": "^3.1.10",
     "mongoose": "^5.4.2",
     "node-env-file": "^0.1.8",
+    "shortid": "^2.2.14",
     "valid-url": "^1.0.9"
   }
 }
